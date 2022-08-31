@@ -1,0 +1,31 @@
+Q. What are the things that a front end of a website consists of?
+
+
+	obviously we know all the answer. 
+	the major components of front end is HTML, CSS and JavaScript.
+
+	so why do we need three?
+	
+	- well it creates microservices for the website to render the components easily. 
+	- each component is used and perform its own task.
+
+
+
+	HTML creates structure, paragraphs and headings and so on.
+
+	CSS tells the browser how things look.
+
+
+	Now the JAVASCRIPT :
+
+	Javascript is a scripting language of the web.
+
+	A scripting language or script language is a programming language that is used to manipulate, customize, and automate the facilities of an existing 	system. Scripting languages are usually interpreted at runtime rather than compiled. ~ Wiki
+
+
+	JavaScript adds interactivity, multi-media control and more.
+
+	Increasingly html and css both are capable of doing the same too and even with less fragility.
+
+	But for the most of the dynamic and interactive features of the web we need JavaScript.
+
