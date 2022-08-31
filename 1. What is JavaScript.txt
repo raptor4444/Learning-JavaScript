@@ -20,7 +20,8 @@ Q. What are the things that a front end of a website consists of?
 
 	Javascript is a scripting language of the web.
 
-	A scripting language or script language is a programming language that is used to manipulate, customize, and automate the facilities of an existing 	system. Scripting languages are usually interpreted at runtime rather than compiled. ~ Wiki
+	A scripting language or script language is a programming language that is used to manipulate, customize, and automate the facilities of an
+	existing system. Scripting languages are usually interpreted at runtime rather than compiled. ~ Wiki
 
 
 	JavaScript adds interactivity, multi-media control and more.
