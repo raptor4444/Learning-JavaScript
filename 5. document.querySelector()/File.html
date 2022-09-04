@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <button data-snack="chips"></button>
+        <button class="bg-red"></button>
+        <button> 3 </button>
+        <button class="bg-red" data-snack="carrot"></button>
+    </p>
+
+
+    <script>
+
+        // to search for the first button :
+        let key = document.querySelector('button');
+        console.log(key);
+
+
+        // to search for the element with the .bg-red class : 
+        let red = document.querySelector('.bg-red');
+        console.log(key);
+
+        
+        // to search for the element with a data attribute of snack equals to carrot
+        let carrot = document.querySelector('[data-snack = "carrot"]');
+        console.log(carrot);
+
+        
+        // for element that not exist.
+        let none = document.querySelector('.bg-orange');
+        console.log(none); //returns null.
+
+        
+        if(none){
+            console.log('this will not show up..')
+        }
+
+
+    </script>
+</body>
+</html>
