@@ -16,6 +16,32 @@
     <script>
         
 
+        /*
+
+        Points to remember:
+
+            - The basic format for adding EventListner:
+
+                document.querySelectorAll("button")[0].addEventListener("click", handleClick);
+                
+                function handleClick(){
+                    alert("Button 1 got clicked.!!");
+                };
+                
+
+            - Another way of doing the same is by using "Higher-Order-Function".
+
+                - Here the functions take other functions as input.
+
+                - Example :
+
+                    document.querySelectorAll("button")[0].addEventListener("click", function(){
+                        alert("Button 1 got clicked.!!");
+                    });
+            
+        */
+
+
         document.querySelectorAll("button")[0].addEventListener("click", function(){
             alert("Button 1 got clicked.!!");
         });
@@ -28,9 +54,6 @@
 
 
     </script>
-
-    
-
 
 
 </body>
