@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //"parseFloat()" is used to accept a string and convert it into a floating-point number.
+
+        //Examples:
+
+        let pi = parseFloat('3.14');
+        let piText = parseFloat('3.14 is a number');
+        let num = parseFloat('3');
+        let num2 = parseFloat('3.13a2');
+        let abcNum = parseFloat('abc3');
+
+        console.log(pi);        //Returns numeric value ie., 3.14.
+        console.log(piText);    //Only Returns the numeric value ie., 3.14.
+        console.log(num);       //Returns only 3, NOT 3.0.
+        console.log(num2);      //Returns only upto 3.13. The value ends, before if any word/alphabet found.
+        console.log(abcNum);    //Returns NAN / NULL
+
+
+
+    </script>
+
+
+</body>
+</html>
