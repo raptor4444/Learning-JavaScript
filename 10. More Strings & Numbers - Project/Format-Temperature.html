@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body{
+            margin: 1em auto;
+            max-width: 40em;
+            width: 80%;
+        }
+        #result:not(:empty){
+            background-color: #f7f7f7;
+            border: 1px solid rgb(4, 204, 4);
+            margin: 1em 0;
+            padding: 1em;
+        }
+    </style>
+
+</head>
+
+    <body>
+        
+        <h1>Temperature Converter</h1>
+
+
+        <label for="temp"> Enter the temperature here: </label>
+        <input type="text" id="temp">
+
+        <div id="result" aria-live = "polite"></div>
+
+        <script>
+
+            let temp = document.querySelector('#temp');
+            let result = document.querySelector('#result');
+            
+
+            temp.addEventListener('input', function(){
+                let celsius = (parseFloat(temp.value)-32)* 5 / 9;
+                let limit = celsius.toFixed(1) + " degree celsius";
+                result.textContent = limit;
+            });
+        
+
+        </script>
+
+
+    </body>
+</html>
