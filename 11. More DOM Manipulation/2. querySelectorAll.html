@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>
+        <button data-snack>1</button>
+        <button class="bg-red">2</button>
+        <button data-snack>3</button>
+        <button class="bg-red">4</button>
+    </p>
+
+
+    <script>
+
+        let allButtons = document.querySelectorAll("button");
+        console.log(allButtons);
+
+        let elemButton = document.querySelectorAll(".bg-red");
+        console.log(elemButton);
+
+        let attrButton = document.querySelectorAll("[data-snack]");
+        console.log(attrButton);
+
+    </script>
+
+</body>
+</html>
