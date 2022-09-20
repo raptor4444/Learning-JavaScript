@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body{
+            margin: 1em auto;
+            max-width: 40em;
+            width: 80%;
+        }
+        #result:not(:empty){
+            background-color: #f7f7f7;
+            border: 1px solid rgb(4, 204, 4);
+            margin: 1em 0;
+            padding: 1em;
+        }
+    </style>
+
+</head>
+
+    <body>
+        
+        <h1>Temperature Converter</h1>
+
+
+        <label for="temp"> Enter the temperature here: </label>
+        <input type="text" id="temp">
+
+
+        <label>
+            <input type="radio" name="units" value="Celsius" checked>To Celcius
+        </label>
+   
+        <label>
+            <input type="radio" name="units" value="Fahrenheit">To Fahrenheit       <!-- using checked in the second input can check the second input by default -->
+        </label>
+
+        <div id="result" aria-live = "polite"></div>
+
+        <script>
+
+            let temp = document.querySelector('#temp');
+            let result = document.querySelector('#result');
+            
+            let toggles = document.querySelectorAll('[name="units"]');
+            
+
+            temp.addEventListener('input', function(){
+
+                let units = 'celsius';
+                for(let toggle of toggles){
+                    if(toggle.checked){
+                        units = toggle.value;
+                    }
+                }
+
+                let converted = 0;
+
+                if(units == 'celsius'){
+                    converted = (temp.value - 32) * 5/9;
+                }
+                else{
+                    converted = (temp.value * 9/5) + 32;
+                }
+
+                result.textContent = `${converted.toFixed(1)} degree ${units}`;
+            });
+        
+
+        </script>
+
+
+    </body>
+</html>
