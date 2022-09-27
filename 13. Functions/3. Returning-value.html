@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // Returns value:
+        function sayhi(name){
+            return `Hi there, ${name}!`;
+        }
+
+        // Calling a function:
+        let greeting = sayhi('David');
+        console.log(greeting);
+
+        // Here the function won't be able to console log anythinng cuz of return message before it.
+        // What we can do is flipping the order of statements at 25 & 26.
+        function saybye(name){
+            let message = `Goodbye ${name}!`;
+            return message;
+            console.log(message);
+        }
+
+        saybye('Brother');
+
+
+    </script>
+
+
+
+
+</body>
+</html>
